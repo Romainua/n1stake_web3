@@ -1,0 +1,1 @@
+fa3b3d16ecfee7f526555c1521168a59269464065d5cb51e3bf44fac50e27d6f  ./target/wasm32-unknown-unknown/release/n1stake.wasm
