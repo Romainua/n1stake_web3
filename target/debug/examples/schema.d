@@ -1,0 +1,1 @@
+/Users/sashaosadchiy/n1stake_web3/target/debug/examples/schema: /Users/sashaosadchiy/n1stake_web3/examples/schema.rs /Users/sashaosadchiy/n1stake_web3/src/contract.rs /Users/sashaosadchiy/n1stake_web3/src/error.rs /Users/sashaosadchiy/n1stake_web3/src/lib.rs /Users/sashaosadchiy/n1stake_web3/src/msg.rs /Users/sashaosadchiy/n1stake_web3/src/state.rs
