@@ -2,7 +2,7 @@
   "name": "n1stake",
   "developer": {
     "archwayd": {
-      "docker": true
+      "docker": false
     },
     "scripts": {
       "test": "cargo unit-test",
@@ -12,7 +12,108 @@
       "query": "archwayd query wasm",
       "tx": "archwayd tx wasm execute"
     },
-    "deployments": []
+    "deployments": [
+      {
+        "type": "set-metadata",
+        "chainId": "torii-1",
+        "contract": "archway1lg6xp7pcr8ddrwh078t78zy8vecuwarxnzzazjpe4n3z4w7sde7qw8ksw8",
+        "contractMetadata": {
+          "developerAddress": "archway15r6pku8qg2cm5pujd0558lek7aa5r2hxpstdg9",
+          "rewardAddress": "archway15r6pku8qg2cm5pujd0558lek7aa5r2hxpstdg9",
+          "collectPremium": true,
+          "premiumPercentage": 197
+        }
+      },
+      {
+        "type": "instantiate",
+        "chainId": "torii-1",
+        "codeId": 41357,
+        "address": "archway1lg6xp7pcr8ddrwh078t78zy8vecuwarxnzzazjpe4n3z4w7sde7qw8ksw8",
+        "admin": "archway15r6pku8qg2cm5pujd0558lek7aa5r2hxpstdg9"
+      },
+      {
+        "type": "create",
+        "chainId": "torii-1",
+        "codeId": 41357
+      },
+      {
+        "type": "instantiate",
+        "chainId": "torii-1",
+        "codeId": 41354,
+        "address": "archway1chjdlyv2csevyt2gfvv4c97vvvk54affywx7ppw4n3r7pps9y5ss0r2uqc",
+        "admin": "archway15r6pku8qg2cm5pujd0558lek7aa5r2hxpstdg9"
+      },
+      {
+        "type": "create",
+        "chainId": "torii-1",
+        "codeId": 41354
+      },
+      {
+        "type": "instantiate",
+        "chainId": "torii-1",
+        "codeId": 39896,
+        "address": "archway1mwxz937cjqh3pfggrpcqtf63x9vcs9lrcx8pke6fhkantqhl4hwq5kknrn",
+        "admin": "archway15r6pku8qg2cm5pujd0558lek7aa5r2hxpstdg9"
+      },
+      {
+        "type": "create",
+        "chainId": "torii-1",
+        "codeId": 39896
+      },
+      {
+        "type": "set-metadata",
+        "chainId": "torii-1",
+        "contract": "archway1j7rlzmkmtn94y55t4zz3gfhvve78gdg4ahxmffwa2nr4qnygrnpq9huy5g",
+        "contractMetadata": {
+          "developerAddress": "archway15r6pku8qg2cm5pujd0558lek7aa5r2hxpstdg9",
+          "rewardAddress": "archway1t0ygwu08cyenymumuvupfnn89zeu25k3n7g0gc",
+          "collectPremium": true,
+          "premiumPercentage": 200
+        }
+      },
+      {
+        "type": "instantiate",
+        "chainId": "torii-1",
+        "codeId": 14364,
+        "address": "archway1j7rlzmkmtn94y55t4zz3gfhvve78gdg4ahxmffwa2nr4qnygrnpq9huy5g",
+        "admin": "archway15r6pku8qg2cm5pujd0558lek7aa5r2hxpstdg9"
+      },
+      {
+        "type": "create",
+        "chainId": "torii-1",
+        "codeId": 14364
+      },
+      {
+        "type": "create",
+        "chainId": "torii-1",
+        "codeId": 12795
+      },
+      {
+        "type": "create",
+        "chainId": "torii-1",
+        "codeId": 12793
+      },
+      {
+        "type": "create",
+        "chainId": "torii-1",
+        "codeId": 12792
+      },
+      {
+        "type": "create",
+        "chainId": "torii-1",
+        "codeId": 12766
+      },
+      {
+        "type": "create",
+        "chainId": "torii-1",
+        "codeId": 12759
+      },
+      {
+        "type": "create",
+        "chainId": "torii-1",
+        "codeId": 12242
+      }
+    ]
   },
   "network": {
     "name": "torii",
@@ -28,14 +129,14 @@
     },
     "wasm": {
       "bech32Hrp": "archway",
-      "archwayd": "0.0.4",
+      "archwayd": "0.0.5",
       "configDir": ".archway",
       "binary": "archwayd"
     },
     "urls": {
       "rpc": {
-        "url": "https://rpc.torii-1.archway.tech",
-        "port": 443
+        "url": "http://localhost",
+        "port": 26657
       },
       "faucets": [
         "https://faucet.torii-1.archway.tech"
