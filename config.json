@@ -135,8 +135,8 @@
     },
     "urls": {
       "rpc": {
-        "url": "http://localhost",
-        "port": 26657
+        "url": "https://rpc.torii-1.archway.tech",
+        "port": 443
       },
       "faucets": [
         "https://faucet.torii-1.archway.tech"
