@@ -20,8 +20,19 @@
         "contractMetadata": {
           "developerAddress": "archway15r6pku8qg2cm5pujd0558lek7aa5r2hxpstdg9",
           "rewardAddress": "archway15r6pku8qg2cm5pujd0558lek7aa5r2hxpstdg9",
-          "collectPremium": true,
-          "premiumPercentage": 197
+          "collectPremium": false,
+          "gasRebate": false
+        }
+      },
+      {
+        "type": "set-metadata",
+        "chainId": "torii-1",
+        "contract": "archway1lg6xp7pcr8ddrwh078t78zy8vecuwarxnzzazjpe4n3z4w7sde7qw8ksw8",
+        "contractMetadata": {
+          "developerAddress": "archway15r6pku8qg2cm5pujd0558lek7aa5r2hxpstdg9",
+          "rewardAddress": "archway15r6pku8qg2cm5pujd0558lek7aa5r2hxpstdg9",
+          "collectPremium": false,
+          "premiumPercentage": 0
         }
       },
       {
